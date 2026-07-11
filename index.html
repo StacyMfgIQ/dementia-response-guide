@@ -339,7 +339,7 @@ pintrk('page');
   .cta-gold{background:var(--gold);color:#3a2e15}
   .cta-gold:hover{background:#d4a14f}
   .cta-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
-  .cta-outline:hover{background:rgba(255,255,255,.12)}
+  .cta-outline:hover{background:rgba(255,255,255,.12)}  .cta-gold-outline{background:transparent;color:var(--gold);border:1.5px solid var(--gold)} .cta-gold-outline:hover{background:var(--gold);color:#3a2e15}
 
   .next-tool{
     text-align:center;margin-top:22px;font-size:0.96rem;color:var(--ink-soft);
@@ -712,7 +712,7 @@ function renderResult(){
     </div>
   `;
 
-    html += `<div class="sec" style="background:var(--cream);border:1.5px solid var(--gold);border-radius:12px;padding:22px 24px;margin-top:8px"><div class="eyebrow" style="color:var(--gold);margin-bottom:6px">A little something extra</div><h2 style="margin-bottom:6px">You've unlocked 2 free guides</h2><p style="color:var(--sage-soft);margin-bottom:16px">Made for exactly this part of the journey.</p><div class="cta-row"><a class="cta cta-outline" href="https://thepreparedlifestore.com/downloads/coping-with-evening-agitation.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_sundowning_guide'})">Coping with Evening Agitation &rarr;</a><a class="cta cta-outline" href="https://thepreparedlifestore.com/downloads/the-length-of-dementia.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_length_guide'})">The Length of Dementia &rarr;</a></div></div>`;  /* CTA loop — to highest-value dementia SKUs */
+    html += `<div class="sec" style="background:var(--cream);border:1.5px solid var(--gold);border-radius:12px;padding:22px 24px;margin-top:8px"><div class="eyebrow" style="color:var(--gold);margin-bottom:6px">A little something extra</div><h2 style="margin-bottom:6px">You've unlocked 2 free guides</h2><p style="color:var(--sage-soft);margin-bottom:16px">Made for exactly this part of the journey.</p><div class="cta-row"><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/coping-with-evening-agitation.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_sundowning_guide'})">Coping with Evening Agitation &rarr;</a><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/the-length-of-dementia.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_length_guide'})">The Length of Dementia &rarr;</a></div></div>`;  /* CTA loop — to highest-value dementia SKUs */
   html += `
     <div class="upsell">
       <div class="eyebrow">When the moment passes</div>
