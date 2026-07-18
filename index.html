@@ -295,11 +295,11 @@ pintrk('page');
   .lines li:last-child{border-bottom:none}
   .lines li .tag{font-size:0.84rem;color:var(--ink-soft);font-style:italic}
   .lines.say li::before{
-    content:"â";position:absolute;left:0;top:9px;
+    content:"✓";position:absolute;left:0;top:9px;
     color:var(--sage);font-weight:700;
   }
   .lines.avoid li::before{
-    content:"â";position:absolute;left:0;top:9px;
+    content:"✗";position:absolute;left:0;top:9px;
     color:var(--terracotta);font-weight:700;
   }
 
@@ -395,7 +395,7 @@ pintrk('page');
     </style>
   
 <header>
-  <div class="eyebrow">The Prepared Life Â· Dementia Care</div>
+  <div class="eyebrow">The Prepared Life · Dementia Care</div>
   <h1>Dementia Response Guide</h1>
   <p class="sub">What you're seeing. What might be causing it. What to do next.</p>
 </header>
@@ -433,7 +433,7 @@ pintrk('page');
       </button>
     </div>
     <div class="flag hidden" id="sudden-flag" style="margin-top:18px">
-      <h3>â  When a change comes on fast, it's worth a quick medical check</h3>
+      <h3>⚠ When a change comes on fast, it's worth a quick medical check</h3>
       <p>Sudden behavior changes in dementia are often caused by something physical and treatable:</p>
       <ul>
         <li>UTI</li><li>Pain</li><li>Constipation</li><li>Dehydration</li><li>Infection / fever</li><li>Medication change</li>
@@ -460,7 +460,7 @@ pintrk('page');
         <small>Upset, agitated, or hard to redirect</small>
       </button>
       <button class="choice severe" onclick="answerSeverity('severe')">
-        Severe â a safety concern
+        Severe — a safety concern
         <small>Someone could get hurt, or they're in danger</small>
       </button>
     </div>
@@ -480,14 +480,14 @@ pintrk('page');
 
   <p class="footer-brand">
     <span class="tag">Life happens. Best have a plan.</span><br>
-    The Prepared Life Â· thepreparedlifestore.com
+    The Prepared Life · thepreparedlifestore.com
   </p>
 
 </div>
 
 <script>
 /* =========================================================
-   CONTENT SPINE â every behavior is one entry.
+   CONTENT SPINE — every behavior is one entry.
    Add the remaining behaviors here later; the UI renders
    itself from this object. No logic changes needed.
    ========================================================= */
@@ -644,7 +644,7 @@ function renderResult(){
   const sevMap = {
     mild:    {tag:"Mild", cls:"sev-mild"},
     moderate:{tag:"Moderate", cls:"sev-moderate"},
-    severe:  {tag:"Severe Â· Safety Concern", cls:"sev-severe"}
+    severe:  {tag:"Severe · Safety Concern", cls:"sev-severe"}
   };
 
   let html = `
@@ -676,7 +676,7 @@ function renderResult(){
   if(state.sudden){
     html += `
       <div class="flag" style="margin-bottom:24px">
-        <h3>â  This came on suddenly &mdash; rule out a physical cause</h3>
+        <h3>⚠ This came on suddenly &mdash; rule out a physical cause</h3>
         <p>A fast change can track with something treatable:</p>
         <ul>
           <li>UTI</li><li>Pain</li><li>Constipation</li><li>Dehydration</li><li>Infection / fever</li><li>Medication change</li>
@@ -720,7 +720,7 @@ function renderResult(){
     </div>
   `;
 
-    html += `<div class="sec" style="background:var(--cream);border:1.5px solid var(--gold);border-radius:12px;padding:22px 24px;margin-top:8px"><div class="eyebrow" style="color:var(--gold);margin-bottom:6px">A little something extra</div><h2 style="margin-bottom:6px">You've unlocked 2 free guides</h2><p style="color:var(--sage-soft);margin-bottom:16px">Made for exactly this part of the journey.</p><div class="cta-row"><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/coping-with-evening-agitation.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_sundowning_guide'})">Coping with Evening Agitation &rarr;</a><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/the-length-of-dementia.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_length_guide'})">The Length of Dementia &rarr;</a></div></div>`;  /* CTA loop â to highest-value dementia SKUs */
+    html += `<div class="sec" style="background:var(--cream);border:1.5px solid var(--gold);border-radius:12px;padding:22px 24px;margin-top:8px"><div class="eyebrow" style="color:var(--gold);margin-bottom:6px">A little something extra</div><h2 style="margin-bottom:6px">You've unlocked 2 free guides</h2><p style="color:var(--sage-soft);margin-bottom:16px">Made for exactly this part of the journey.</p><div class="cta-row"><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/coping-with-evening-agitation.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_sundowning_guide'})">Coping with Evening Agitation &rarr;</a><a class="cta cta-gold-outline" href="https://thepreparedlifestore.com/dementia-response-guide/downloads/the-length-of-dementia.pdf" target="_blank" rel="noopener" onclick="pintrk('track','custom',{lead_type:'bonus_length_guide'})">The Length of Dementia &rarr;</a></div></div>`;  /* CTA loop — to highest-value dementia SKUs */
   html += `
     <div class="upsell">
       <div class="eyebrow">When the moment passes</div>
@@ -761,7 +761,7 @@ function startOver(){
 <footer style="max-width:680px;margin:40px auto 60px;padding:0 20px;">
   <div style="background:#fdfcfa;border:1px solid #ddd9d3;border-radius:16px;padding:28px;">
     <h2 style="font-family:'Lora',Georgia,serif;font-size:19px;font-weight:600;color:#2d2d2a;margin-bottom:6px;">Related Free Tools</h2>
-    <p style="font-size:13px;color:#5a5955;font-weight:300;margin-bottom:18px;">More tools from The Prepared Life Shop â life happens, best have a plan.</p>
+    <p style="font-size:13px;color:#5a5955;font-weight:300;margin-bottom:18px;">More tools from The Prepared Life Shop — life happens, best have a plan.</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px;">
       <a href="https://thepreparedlifestore.com/" style="display:inline-block;padding:8px 16px;border:1.5px solid #c4913a;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:13px;color:#2d2d2a;text-decoration:none;">All Free Tools</a>
       <a href="https://thepreparedlifestore.com/home-safety-walkthrough/" style="display:inline-block;padding:8px 16px;border:1.5px solid #c4913a;border-radius:20px;font-family:'DM Sans',sans-serif;font-size:13px;color:#2d2d2a;text-decoration:none;">Home Safety Walkthrough</a>
